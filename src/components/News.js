@@ -4,7 +4,9 @@ import Spinners from './Spinners';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 
-const API_KEY = process.env.REACT_APP_API_KEY;;
+const API_KEY = "892ddf431ec342a785409231ebfc6362";
+// REACT_APP_API_KEY = "892ddf431ec342a785409231ebfc6362"
+
 // console.log(process.env.REACT_APP_API_KEY);
 
 
