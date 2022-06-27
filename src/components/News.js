@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 
 const API_KEY = "892ddf431ec342a785409231ebfc6362";
-// REACT_APP_API_KEY = "892ddf431ec342a785409231ebfc6362"
 
 // console.log(process.env.REACT_APP_API_KEY);
 
@@ -56,7 +55,7 @@ export default function News(props) {
   let maxPages = Math.ceil(Data.length / pageSize);
   return (
     <div className='container-fluid'>
-      <h1 className='text-center fw-fw-bolder'> {category.toUpperCase()} - News</h1>
+      {/* {!(isLoading)} && <h1 className='text-center fw-fw-bolder'> {(category) ? category.toUpperCase() : "NULL"} - News</h1> */}
       {isLoading && <Spinners />}
       <div className="row justify-content-center">
         {
@@ -66,7 +65,7 @@ export default function News(props) {
                 <div className="card border border-dark border-3 " >
 
                   <a rel="noreferrer" href={item.url} target="_blank" className="bg-dark thumbnail">
-                  <img src={(item.urlToImage) ? (item.urlToImage) : "https://source.unsplash.com/random"} className="card-img-top border rounded-5" alt={item.title} width={300} height={250} />
+                    <img src={(item.urlToImage) ? (item.urlToImage) : "https://source.unsplash.com/random"} className="card-img-top border rounded-5" alt={item.title} width={300} height={250} />
 
                   </a>
                   <div className="card-body">
@@ -81,7 +80,7 @@ export default function News(props) {
                     {/* Author */}
                     <p className="card-text text-end fw-bold text-primary"> ~ {(item.author) ? item.author : "Anonymous"}</p>
                     {/* publishedAt */}
-                    <p className="card-text text-end fw-bold text-warning"> {(item.publishedAt) ? Date(item.publishedAt).slice(0, 10) + "," +Date(item.publishedAt).slice(11, 16) : "NULL"}</p>
+                    <p className="card-text text-end fw-bold text-warning"> {(item.publishedAt) ? Date(item.publishedAt).slice(0, 10) + "," + Date(item.publishedAt).slice(11, 16) : "NULL"}</p>
                     {/* time */}
 
                     <div className="text-center">
