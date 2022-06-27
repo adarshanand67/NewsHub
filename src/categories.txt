@@ -1,0 +1,18 @@
+business
+entertainment
+general
+health
+science
+sports
+technology
+
+
+<Route path="/business" component = {News}></Route>
+<Route path="/entertainment" component = {News}></Route>
+<Route path="/general" component = {News}></Route>
+<Route path="/health" component = {News}></Route>
+<Route path="/science" component = {News}></Route>
+<Route path="/sports" component = {News}></Route>
+<Route path="/technology" component = {News}></Route>
+
+            <Route path="/Business" component={News}></Route>
