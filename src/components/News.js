@@ -11,10 +11,10 @@ const API_KEY = "892ddf431ec342a785409231ebfc6362";
 
 export default function News(props) {
 
-  let { pageSize, country } = props;
+  let { pageSize, country,category } = props;
 
-  let params = useParams();
-  const category = params.category;
+  // let params = useParams();
+  // const category = params.category;
 
   console.log(category);
 
