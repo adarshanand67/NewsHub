@@ -1,7 +1,9 @@
 # Getting Started with Create React App
 
 Run the site locally -
+
 `npm install`
+
 `npm start`
 
 ![Demo](https://i.imgur.com/jMqQx6o.png)
