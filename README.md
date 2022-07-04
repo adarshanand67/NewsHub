@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+Run the site locally -
+`npm install`
+`npm start`
+
+![Demo](https://i.imgur.com/jMqQx6o.png)
+![Demo](https://i.imgur.com/TqJ3xVH.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
